@@ -6,8 +6,7 @@ Parallel operation by using Tmux
 
 On Mac, you can install scripts by [Homebrew](https://github.com/mxcl/homebrew):
 
-    $ brew tap rcmdnk/rcmdnkpac
-    $ brew install po
+    $ brew install rcmdnk/rcmdnkpac/po
 
 If you have [brew-file](https://github.com/rcmdnk/homebrew-file), add following lines to Brewfile:
 
