@@ -66,6 +66,10 @@ Or, simply download scripts (`bin/po`) and set where you like.
 
         $ po -- "-l user exmaple1" "-l user exmaple2"
 
+## Examples
+
+![po](https://raw.githubusercontent.com/rcmdnk/ParallelOperation/master/gif/po.gif)
+
 ## Thanks
 
 This script was inspired by following blog post:
