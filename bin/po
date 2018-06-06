@@ -41,18 +41,20 @@ Arguments:
   -h        Print Help (this message) and exit
 
 hostX can be given with any ssh options.
+
 e.g.)
 
     $ $(basename "$0") -- user1@example1.com \"-i ~/.ssh/my_key example2.com\"
 
-If '-l' or '-i' is given, it will be applied for all hosts.
+Need '--' if you want to give options in the host definitions.
 
-    $ $(basename "$0") -l user1 example1.com example2.com
+If '-l' or '-i' is given to $(basename "$0"), it will be applied for all hosts.
+
+    $ $(basename "$0") -l user exmaple1 exmaple2
 
 is same as
 
-    $ $(basename "$0") -- \"-l user1 example1.com\" \"-l user1 example2.co\"m
-
+    $ $(basename "$0") -- \"-l user exmaple1\" \"-l user exmaple2\"
 "
 
 # Default values
