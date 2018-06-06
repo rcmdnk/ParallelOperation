@@ -1,6 +1,10 @@
 # ParallelOperation
 
-Parallel operation by using Tmux
+Parallel operation by using tmux
+
+## Requirement
+
+* tmux (tested with 1.6 and 2.7)
 
 ## Installation
 
@@ -39,6 +43,28 @@ Or, simply download scripts (`bin/po`) and set where you like.
 
 ## Usage
 
+    Usage: po [-lih] <host1> [<host2> [<host3>...]]
+
+    Arguments:
+      -l <user> Set user
+      -i <key>  Set ssh key
+      -h        Print Help (this message) and exit
+
+    hostX can be given with any ssh options.
+
+    e.g.)
+
+        $ po -- user1@example1.com "-i ~/.ssh/my_key example2.com"
+
+    Need '--' if you want to give options in the host definitions.
+
+    If '-l' or '-i' is given to po, it will be applied for all hosts.
+
+        $ po -l user exmaple1 exmaple2
+
+    is same as
+
+        $ po -- "-l user exmaple1" "-l user exmaple2"
 
 ## Thanks
 
